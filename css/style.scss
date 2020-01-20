@@ -45,6 +45,14 @@ $textseconday: #2f2f2f;
   line-height: 1.8rem;
   color: $textseconday;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
+  a {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(88, 88, 88);
+    text-decoration: underline $primary;
+  }
 }
 
 .social-icons {
