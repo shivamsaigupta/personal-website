@@ -1,3 +1,14 @@
+.social-icons {
+  margin: 1rem 0;
+}
+.social-icons a {
+  padding: 0.5rem;
+  color: #3f3f3f;
+}
+.social-icons a:hover {
+  color: rgba(0, 182, 238, 0.8);
+}
+
 .card {
   display: inline-block;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
