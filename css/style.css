@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: nyt-imperial;
-  src: url(./fonts/imperial-normal-500.ttf);
+  src: url(../fonts/imperial-normal-500.ttf);
 }
 @font-face {
   font-family: nyt-franklin;
-  src: url(./fonts/franklin-normal-500.ttf);
+  src: url(../fonts/franklin-normal-500.ttf);
 }
 @font-face {
   font-family: nyt-cheltenham;
-  src: url(./fonts/cheltenham-italic-500.ttf);
+  src: url(../fonts/cheltenham-italic-500.ttf);
 }
 .container {
   background-color: #fff;
@@ -25,19 +25,21 @@
 
 .title {
   margin: 1rem 1rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: #353535;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 .text {
-  margin: 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  margin: 1.5rem 0.5rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #2f2f2f;
   font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 .social-icons {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 .social-icons a {
   padding: 0.5rem;
@@ -211,7 +213,7 @@ footer {
 }
 
 .hero-bkg-animated {
-  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  background: gray url(../images/lilypads.png) repeat 0 0;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -266,12 +268,16 @@ footer {
 
 .card-text h3 {
   font-size: 2rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: #353535;
 }
 
 .card-text p {
   margin: 1.5rem 0.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.2rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: #2f2f2f;
 }
 
 .card-fab {
