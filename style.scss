@@ -1,0 +1,357 @@
+$primary: rgba(0, 182, 238, 0.8);
+$secondary: rgb(0, 195, 255);
+$third: rgb(0, 139, 182);
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: nyt-imperial;
+  src: url(./fonts/imperial-normal-500.ttf);
+}
+
+@font-face {
+  font-family: nyt-franklin;
+  src: url(./fonts/franklin-normal-500.ttf);
+}
+
+@font-face {
+  font-family: nyt-cheltenham;
+  src: url(./fonts/cheltenham-italic-500.ttf);
+}
+
+.container {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+}
+
+.title {
+  margin: 1rem 1rem;
+  font-size: 2rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.text {
+  margin: 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.social-icons {
+  margin: 1rem 0;
+  a {
+    padding: 0.5rem;
+    color: #3f3f3f;
+  }
+  a:hover {
+    color: $primary;
+  }
+}
+
+hr {
+  opacity: 0.2;
+}
+
+footer {
+  min-height: 50px;
+}
+// Nav bar Start
+
+// ---------------------------
+// Vars & Helper Functions
+// ---------------------------
+
+:root {
+  --screen-width: 320px;
+  --screen-height: 560px;
+  --header-bg-color: #673ab7;
+  --splash-bg-color: #368887;
+}
+
+// calculate a circle's circumference based on radius
+@function circumference($r) {
+  $pi: 3.141592653;
+  @return 2 * $pi * $r;
+}
+
+// ---------------------------
+// Main Navigation Menu
+// ---------------------------
+
+.nav {
+  // Toggle Button
+  &__toggle {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    border: 0;
+    background-color: $primary;
+    outline: 0;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.15s linear;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--screen-height);
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+  }
+
+  &__item {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+  }
+  @for $i from 1 through 5 {
+    &__item:nth-child(#{$i}) {
+      transform: translateY(-40px * $i);
+    }
+  }
+
+  &__link {
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 1rem;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// ---------------------------
+// SVG Menu Icon
+// ---------------------------
+
+.menuicon {
+  display: block;
+  cursor: pointer;
+  color: white;
+
+  transform: rotate(0deg);
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &__bar,
+  &__circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  &__bar {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-in-out;
+  }
+  &__circle {
+    transition: stroke-dashoffset 0.3s linear 0.1s;
+    stroke-dashoffset: circumference(23); // 23 is the <circle>'s radius
+    stroke-dasharray: circumference(23);
+  }
+}
+
+// ---------------------------
+// Circular Splash Background
+// ---------------------------
+
+.splash {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 1px;
+  height: 1px;
+  z-index: 4;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $third;
+
+    // screen diameter can be 142vmax at most,
+    // circle needs to be twice that size to cover it
+    width: 284vmax;
+    height: 284vmax;
+    top: -142vmax;
+    left: -142vmax;
+
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    // will-change tells the browser we plan to
+    // animate this property in the near future
+    will-change: transform;
+  }
+}
+
+// ---------------------------
+// Active State
+// ---------------------------
+
+.nav:target,
+.nav--open {
+  //scale the background circle to full size
+  > .splash::after {
+    transform: scale(1);
+  }
+
+  //animate the menu icon
+  .menuicon {
+    color: white;
+    transform: rotate(180deg);
+
+    &__circle {
+      stroke-dashoffset: 0;
+    }
+    &__bar:nth-child(1),
+    &__bar:nth-child(4) {
+      opacity: 0;
+    }
+    &__bar:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &__bar:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  //show the nav items
+  .nav {
+    &__menu {
+      visibility: visible;
+    }
+
+    &__item {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.header {
+  max-height: 20px;
+}
+
+// Nav bar end
+
+// BG Animation Start
+.hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat
+    0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 300px;
+  padding-top: 120px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
+  }
+}
+// BH Animation End
+
+// Card Start
+
+.card {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 54px;
+}
+
+.image {
+  height: 200px;
+  opacity: 0.7;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover,
+.card:hover .image {
+  height: 200px;
+  opacity: 1;
+}
+
+.card-text {
+  background: #fff;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.card-text h3 {
+  font-size: 2rem;
+}
+
+.card-text p {
+  margin: 1.5rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.card-fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -50px;
+  right: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: $primary;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-fab:hover {
+  background: $secondary;
+  cursor: pointer;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+// Card End

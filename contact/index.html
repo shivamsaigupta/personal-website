@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/b7814e8b2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shivam Sai Gupta</title>
+  </head>
+  <body class="hero-bkg-animated">
+    <header class="header" role="banner">
+      <nav id="nav" class="nav" role="navigation">
+        <!-- ACTUAL NAVIGATION MENU -->
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+          hidden
+        >
+          <li class="nav__item"><a href="../" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="../about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="../portfolio" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- MENU TOGGLE BUTTON -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+      </nav>
+    </header>
+    <div class="container-wrapper">
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <p class="text">
+          Feel free to reach out!
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shivamsaigupta/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://www.twitter.com/shivamsaigupta/"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://www.github.com/shivamsaigupta/"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
