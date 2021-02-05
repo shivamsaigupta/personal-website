@@ -46,6 +46,15 @@
   text-decoration: underline rgba(0, 182, 238, 0.8);
 }
 
+.text .featured-a {
+  color: #464646;
+  text-decoration: none;
+}
+.text .featured-a:hover {
+  color: #585858;
+  text-decoration: underline rgba(0, 182, 238, 0.8);
+}
+
 .social-icons {
   margin: 1.5rem 0;
 }
@@ -54,6 +63,14 @@
   color: #3f3f3f;
 }
 .social-icons a:hover {
+  color: rgba(0, 182, 238, 0.8);
+}
+
+.social-icons .featured-a {
+  padding: 0.5rem;
+  color: #3f3f3f;
+}
+.social-icons .featured-a:hover {
   color: rgba(0, 182, 238, 0.8);
 }
 
@@ -87,6 +104,15 @@
 }
 .featured-content a:hover {
   opacity: 1;
+}
+
+.featured-content .featured-a {
+  flex: 1;
+  margin: 0.5rem 0;
+  opacity: 0.8;
+}
+.featured-content .featured-a:hover {
+  opacity: 0.88;
 }
 
 hr {
