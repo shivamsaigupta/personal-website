@@ -1,2 +1,3 @@
 Use webpack
 Make it a single page app instead of multipage
+Fix DNS issues
