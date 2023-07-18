@@ -5,6 +5,16 @@
     <link>https://shivamsaigupta.com/blog/categories/uncategories/</link>
     <description>Recent content in Uncategories on Shivam Sai Gupta | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://shivamsaigupta.com/blog/categories/uncategories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Jul 2023 23:40:17 +0200</lastBuildDate><atom:link href="https://shivamsaigupta.com/blog/categories/uncategories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My-First-Post</title>
+      <link>https://shivamsaigupta.com/blog/posts/my-first-post/</link>
+      <pubDate>Tue, 18 Jul 2023 23:40:17 +0200</pubDate>
+      
+      <guid>https://shivamsaigupta.com/blog/posts/my-first-post/</guid>
+      <description>This is a first blog post. Just testing if everything works.</description>
+    </item>
+    
   </channel>
 </rss>
