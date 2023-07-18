@@ -6,7 +6,16 @@
     <description>Recent content in Ahoy There! on Shivam Sai Gupta | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Jul 2023 23:40:17 +0200</lastBuildDate><atom:link href="https://shivamsaigupta.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 23:47:27 +0200</lastBuildDate><atom:link href="https://shivamsaigupta.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My-Second-Post</title>
+      <link>https://shivamsaigupta.com/blog/posts/my-second-post/</link>
+      <pubDate>Tue, 18 Jul 2023 23:47:27 +0200</pubDate>
+      
+      <guid>https://shivamsaigupta.com/blog/posts/my-second-post/</guid>
+      <description>test</description>
+    </item>
+    
     <item>
       <title>My-First-Post</title>
       <link>https://shivamsaigupta.com/blog/posts/my-first-post/</link>
