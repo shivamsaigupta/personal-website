@@ -3,21 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shivamsaigupta.com/blog/</loc>
-    <lastmod>2023-07-18T23:47:27+02:00</lastmod>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/categories/</loc>
-    <lastmod>2023-07-18T23:47:27+02:00</lastmod>
-  </url><url>
-    <loc>https://shivamsaigupta.com/blog/posts/my-second-post/</loc>
-    <lastmod>2023-07-18T23:47:27+02:00</lastmod>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/posts/</loc>
-    <lastmod>2023-07-18T23:47:27+02:00</lastmod>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
   </url><url>
-    <loc>https://shivamsaigupta.com/blog/categories/uncategories/</loc>
-    <lastmod>2023-07-18T23:47:27+02:00</lastmod>
+    <loc>https://shivamsaigupta.com/blog/tags/product-management/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
   </url><url>
-    <loc>https://shivamsaigupta.com/blog/posts/my-first-post/</loc>
+    <loc>https://shivamsaigupta.com/blog/categories/product-management/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/tags/startups/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/categories/startups/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/tags/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/tags/technology/</loc>
+    <lastmod>2023-07-18T23:40:17+02:00</lastmod>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/posts/the-unexpected-lessons-unpacking-my-journey-with-tagmate/</loc>
     <lastmod>2023-07-18T23:40:17+02:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/tags/hello/</loc>
@@ -29,14 +41,13 @@
     <loc>https://shivamsaigupta.com/blog/posts/markdown-cheat-sheet/</loc>
     <lastmod>2022-08-27T09:16:45+00:00</lastmod>
   </url><url>
-    <loc>https://shivamsaigupta.com/blog/tags/</loc>
-    <lastmod>2022-08-27T09:16:45+00:00</lastmod>
-  </url><url>
     <loc>https://shivamsaigupta.com/blog/tags/whatsapp/</loc>
     <lastmod>2022-08-27T09:16:45+00:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/categories/css/</loc>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/categories/javascript/</loc>
+  </url><url>
+    <loc>https://shivamsaigupta.com/blog/categories/uncategories/</loc>
   </url>
 </urlset>
