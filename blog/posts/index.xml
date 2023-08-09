@@ -6,7 +6,17 @@
     <description>Recent content in Post on Shivam Sai Gupta | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Jul 2023 23:40:17 +0200</lastBuildDate><atom:link href="https://shivamsaigupta.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Aug 2023 19:04:36 +0200</lastBuildDate><atom:link href="https://shivamsaigupta.com/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hooked: A Crucible for Modern Product Design</title>
+      <link>https://shivamsaigupta.com/blog/posts/hooked-a-crucible-for-modern-product-design/</link>
+      <pubDate>Wed, 09 Aug 2023 19:04:36 +0200</pubDate>
+      
+      <guid>https://shivamsaigupta.com/blog/posts/hooked-a-crucible-for-modern-product-design/</guid>
+      <description>When you pick up a book like &amp;ldquo;Hooked: How to Build Habit-Forming Products&amp;rdquo; by Nir Eyal, you might expect another prosaic guide on product management, laden with terminology and stale examples. But what unfolds is an insightful examination, a playbook almost, for understanding what makes users click, literally and figuratively.
+As a tech person but with an artist&amp;rsquo;s heart, I&amp;rsquo;ve learned that the real art in any creation, whether it be in code or on canvas, lies in the connection it makes with the audience.</description>
+    </item>
+    
     <item>
       <title>The Unexpected Lessons: Unpacking My Journey with Tagmate</title>
       <link>https://shivamsaigupta.com/blog/posts/the-unexpected-lessons-unpacking-my-journey-with-tagmate/</link>
@@ -15,16 +25,6 @@
       <guid>https://shivamsaigupta.com/blog/posts/the-unexpected-lessons-unpacking-my-journey-with-tagmate/</guid>
       <description>From Inspiration to Idea: The Journey Begins The crisp autumn of 2017 marked my journey into an uncharted territory. As a computer science student at Ashoka University, I noticed a recurring theme: Freshmen grappling with the unfamiliar surroundings, trying to navigate social intricacies, longing for friendships. Their quest for acceptance inspired an idea: a platform to facilitate authentic, real-world connections amidst the sea of strangers.
 This was the seed for Tagmate, a concept for a hyper-local social network tailored for universities.</description>
-    </item>
-    
-    <item>
-      <title>Markdown Cheat Sheet</title>
-      <link>https://shivamsaigupta.com/blog/posts/markdown-cheat-sheet/</link>
-      <pubDate>Sat, 27 Aug 2022 09:16:45 +0000</pubDate>
-      
-      <guid>https://shivamsaigupta.com/blog/posts/markdown-cheat-sheet/</guid>
-      <description>This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for basic syntax and extended syntax.
-Heading 1 But what if you want to add another entry to the dictionary without going back to the dictionary to put it there? That&amp;rsquo;s what we are going to look at in this article.</description>
     </item>
     
   </channel>
