@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shivamsaigupta.com/blog/</loc>
+    <lastmod>2023-08-09T19:04:36+02:00</lastmod>
+  </url><url>
     <loc>https://shivamsaigupta.com/blog/tags/book-review/</loc>
     <lastmod>2023-08-09T19:04:36+02:00</lastmod>
   </url><url>
@@ -9,9 +12,6 @@
     <lastmod>2023-08-09T19:04:36+02:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/posts/hooked-a-crucible-for-modern-product-design/</loc>
-    <lastmod>2023-08-09T19:04:36+02:00</lastmod>
-  </url><url>
-    <loc>https://shivamsaigupta.com/blog/</loc>
     <lastmod>2023-08-09T19:04:36+02:00</lastmod>
   </url><url>
     <loc>https://shivamsaigupta.com/blog/posts/</loc>
