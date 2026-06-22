@@ -72,8 +72,21 @@
       <div class="container">
         <h2 class="title">Hi, my name is Shivam.</h2>
         <p class="text">
-          Currently on a mini-retirement.
+          I build tech products and write about product strategy, AI, and technology. I speak at TED Salons and TEDx events on the intersection of emerging technologies and society.<br><br>
+          Currently helping biomedical laboratories modernize their lab processes through digital software.
+          Read my <a href="https://shivamsaigupta.com/blog/posts"><u>latest articles</u></a> or learn <a href="./about"><u>more about me.</u></a>
         </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/shivamsaigupta/"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://www.twitter.com/shivamsaigupta/"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://www.github.com/shivamsaigupta/"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
